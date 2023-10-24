@@ -1,0 +1,29 @@
+body{
+    background-color: #FAD5DD;
+    color: palevioletred;
+}
+nav ul{ display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    list-style: none;
+    background-color: palevioletred;
+    color: #FAD5DD;
+    margin: 0;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    display: flex;
+}
+nav a, nav a:visited{
+    text-decoration: none;
+    width: 100%;
+    padding: 8px 0px;
+    color: #FAD5DD;
+}
+nav a:hover, nav a.active {
+ color: palevioletred;
+    background-color: lightpink;
+}
