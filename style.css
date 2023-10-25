@@ -6,6 +6,7 @@ nav ul{ display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    z-index:10;
 }
 nav li{
     list-style: none;
@@ -16,6 +17,7 @@ nav li{
     min-width: 200px;
     text-align: center;
     display: flex;
+    position: relative;
 }
 nav a, nav a:visited{
     text-decoration: none;
@@ -26,4 +28,21 @@ nav a, nav a:visited{
 nav a:hover, nav a.active {
  color: palevioletred;
     background-color: lightpink;
+}
+.dropdown-content
+{
+    position: absolute;
+    top:37px;
+    width: 100%;
+    display: none;
+    z-index:20;
+}
+nav li:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a{
+    font-weight: bold;
+}
+.dropdown-content ul {
+    flex-direction: column;
 }
